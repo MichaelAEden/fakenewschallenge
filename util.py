@@ -101,7 +101,7 @@ class FNCData:
         rows = []
 
         # Process file
-        with open(filename, "r", encoding='utf-8') as table:
+        with open(os.path.join('data', filename), "r", encoding='utf-8') as table:
             r = DictReader(table)
             for line in r:
                 rows.append(line)
